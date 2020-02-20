@@ -26,13 +26,13 @@ var server = http.createServer(function(request, response) {
   if (path === "/") {
     response.statusCode = 200;
     response.setHeader("Content-Type", "text/html;charset=utf-8");
-    response.write(`<
+    response.write(`
     <!doctype html>
     <html>
     <head>
     <meta charset = "utf-8">
     <title>姚成健</title>
-      <link rel = "stylesheel" href="/style">
+      <link rel = "styleshell" href="/style">
     </head>
     <body>
       <h1>欢迎访问</h1>
