@@ -32,7 +32,7 @@ var server = http.createServer(function(request, response) {
     <head>
     <meta charset = "utf-8">
     <title>姚成健</title>
-      <link rel="stylesheet" href="/style">
+      <link rel="stylesheet" href="./style">
     </head>
     <body>
       <h1>欢迎访问</h1>
@@ -40,10 +40,10 @@ var server = http.createServer(function(request, response) {
     </html>
     `);
     response.end();
-  } else if (path === "/style") {
+  } else if (path === "./style") {
     response.statusCode = 200;
     response.setHeader("Content-Type", "text/css;charset=utf-8");
-    response.write(`body{color: red;}`);
+    response.write(`h1{color: red;}`);
     response.end();
   } else {
     response.statusCode = 404;
