@@ -32,7 +32,7 @@ var server = http.createServer(function(request, response) {
     <head>
     <meta charset = "utf-8">
     <title>姚成健</title>
-      <link rel = "styleshell" href="/style">
+      <link rel="stylesheet" href="/style">
     </head>
     <body>
       <h1>欢迎访问</h1>
